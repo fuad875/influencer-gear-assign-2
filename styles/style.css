@@ -1,0 +1,167 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+     margin:auto; 
+     
+   
+}
+
+ /* Nav part */
+header{
+    padding:30px;
+}
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+   
+}
+.nav-decoration{
+    display: flex;
+  
+}
+   
+nav li{
+    list-style: none;
+
+}
+nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    padding: 20px;
+}
+.flexiable-container{
+    display: flex;
+    margin: 30px;
+    padding: 30px;
+
+}
+.half-width{
+    width:50%;
+   
+}
+.deco-link{
+    text-decoration: none;
+    background-color:#E02C6D;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+}
+.half-width-img{
+    width:50%;
+    padding-left: 10px;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat; 
+    
+   
+
+}
+.fa-arrow-circle-right{
+    padding-left: 5px;
+}
+.half-width-img img{
+    width: 80%;
+    padding-left: 10px;
+   
+   
+}
+.logo-section{
+    width: 80%;
+    margin: auto;
+}
+.logo-pic{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    border: 5px solid whitesmoke;
+    padding:10px;
+   
+}
+
+/* gears design */
+.populargears{
+    margin: 30px;
+    padding: 30px;
+
+}
+.text-deco{
+    text-align: center;
+}
+.gears-all{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:24px;
+    padding:10px;
+
+}
+.see-more{
+    text-align: right;
+}
+.deco-seemore{
+    text-decoration: none;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+    color:#E02C6D;
+    position: relative;
+    top: 5px;
+    left: 5px;
+   
+
+}
+.last-section{
+    background-color: black;
+    color:white;
+    text-align: center;
+    margin-bottom: -50px;
+}
+.social-media{
+   text-align: center;
+ 
+}
+.media-deco{
+    list-style: none;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-row-gap: 2px;
+}
+
+/* media Queries */
+
+/* mobile Devices */
+
+@media only screen and (max-width:688px){
+     .nav-section{
+        width:100%;
+        padding:0px;
+        margin: 0px;
+        align-items: center;
+    }
+    
+    .gears-all{
+       
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .logo-pic,.nav-section{
+        flex-direction: column;
+    }
+   
+}
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .nav-section{
+        width:100% ;
+    }
+    .gears-all{
+      
+        grid-template-columns: repeat(1,1fr);
+    }
+    .logo-section,.logo-pic , .nav-section{
+       
+        grid-template-columns: repeat(1,1fr);
+    }
+}
